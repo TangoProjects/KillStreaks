@@ -1,0 +1,13 @@
+name: KillStreaks
+version: 1.2
+main: me.tango.killstreaks.Main
+description: Rewards on kill-streaks
+author: Tango_
+prefix: Killstreaks
+commands:
+  killstreaks:
+   aliases: [ks, killstreak]
+   description: Access the killstreaks info
+permissions:
+  killstreaks.use:
+    description: Allows the user permission for this plugin

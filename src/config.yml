@@ -1,0 +1,42 @@
+# Killstreaks config by Tango_
+
+# Set how many seconds after a players last kill for the streak to end. 
+reset-seconds: 20
+reset-killstreak-enabled: false
+
+killstreaks-enabled: true
+killreward-enabled: true
+
+prefix: "&b&lKillStreaks &b> "
+
+KillStreaks:
+  1:  #  (You can copy and paste this and change the number to the kills required)
+    name: "&51 Diamond" # (This will be used in the /killstreaks message)
+    items: # Make sure there is " : " separating the item ID and the amount, you can get the material names here: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Material.html
+      - "DIAMOND : 1"
+      - "DIAMOND_SWORD : 2"
+    commands: # (If you don't want any commands, feel free to remove this part) %player% is the placeholder for the players name
+      - "eco give %player& 10"
+      - "msg %player% 1st killstreak!"
+
+  5: 
+    name: "&5Two diamond swords"
+    items:
+      - "DIAMOND_SWORD : 2" 
+
+  10: 
+    name: "&4$10 currency"
+    items:
+      - "DIAMOND : 1"
+      - "DIAMOND_SWORD : 2"
+    commands:
+      - "eco give %player& 10"
+      - "msg %player% 5 kills!"
+
+KillReward: # Reward for getting a kill no matter the kill streak
+  items:
+    - "DIAMOND : 1"
+    - "DIAMOND_SWORD : 2"
+  commands:
+    - "eco give %player& 10"
+    - "msg %player% 5 kills!"
